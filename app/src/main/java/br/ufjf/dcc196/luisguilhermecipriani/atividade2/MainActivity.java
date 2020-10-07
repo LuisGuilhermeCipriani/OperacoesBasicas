@@ -41,5 +41,14 @@ public class MainActivity extends AppCompatActivity {
                 resultado.setText(String.valueOf(valor1 + valor2));
             }
         });
+
+        subtrair.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int valor1 = Integer.parseInt(numero1.getText().toString());
+                int valor2 = Integer.parseInt(numero2.getText().toString());
+                resultado.setText(String.valueOf(valor1 - valor2));
+            }
+        });
     }
 }
