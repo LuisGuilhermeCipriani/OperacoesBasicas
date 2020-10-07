@@ -3,6 +3,7 @@ package br.ufjf.dcc196.luisguilhermecipriani.atividade2;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -31,5 +32,9 @@ public class MainActivity extends AppCompatActivity {
         subtrair = findViewById(R.id.buttonSubtrair);
         multiplicar = findViewById(R.id.buttonMultiplicar);
         dividir = findViewById(R.id.buttonDividir);
+
+        int valor1 = Integer.parseInt(numero1.getText().toString());
+        int valor2 = Integer.parseInt(numero2.getText().toString());
+        
     }
 }
