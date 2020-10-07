@@ -10,7 +10,7 @@
         android:id="@+id/textViewInformacaoValores"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insira dois valores abaixo"
+        android:text="@string/textViewInformacaoValores"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Número 1:"
+        android:text="@string/textViewNumero1"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/textViewInformacaoValores"
         app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoValores" />
@@ -35,18 +35,19 @@
         android:layout_height="36dp"
         android:layout_marginTop="24dp"
         android:ems="10"
-        android:hint="Ex: 3"
+        android:hint="@string/ex_3_Hint"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewInformacaoValores"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoValores" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoValores"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textViewNumero2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Número 2:"
+        android:text="@string/textViewNumero2"
         android:textColor="@android:color/black"
         app:layout_constraintStart_toStartOf="@+id/textViewNumero1"
         app:layout_constraintTop_toBottomOf="@+id/textViewNumero1" />
@@ -57,18 +58,19 @@
         android:layout_height="35dp"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Ex: 2"
+        android:hint="@string/editTextNumero2"
         android:inputType="textPersonName"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/editTextNumero1"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumero1" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumero1"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/textViewInformacaoOperacoes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="128dp"
-        android:text="Escolha uma das operações básicas abaixo"
+        android:text="@string/textViewInformacaoOperacoes"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -80,19 +82,21 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:text="Resultado"
+        android:text="@string/textViewResultado"
         android:textColor="?android:attr/statusBarColor"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoOperacoes" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoOperacoes"
+        tools:targetApi="lollipop" />
 
     <Button
         android:id="@+id/buttonSomar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Somar"
-        android:textSize="10sp"
+        android:text="@string/buttonSomar"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textViewInformacaoOperacoes"
         app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoOperacoes" />
 
@@ -101,8 +105,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Multiplicar"
-        android:textSize="10sp"
+        android:text="@string/buttonMultiplicar"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/textViewInformacaoOperacoes"
         app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoOperacoes" />
 
@@ -111,18 +115,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Subtrair"
-        android:textSize="10sp"
+        android:text="@string/buttonSubtrair"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/buttonSomar"
         app:layout_constraintTop_toBottomOf="@+id/buttonSomar" />
 
     <Button
         android:id="@+id/buttonDividir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
-        android:text="Dividir"
-        android:textSize="10sp"
+        android:text="@string/buttonDividir"
+        android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@+id/buttonMultiplicar"
         app:layout_constraintTop_toBottomOf="@+id/buttonMultiplicar" />
 </androidx.constraintlayout.widget.ConstraintLayout>

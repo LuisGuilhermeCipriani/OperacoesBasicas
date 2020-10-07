@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Atividade 2</string>
+    <string name="textViewInformacaoValores">Insira dois valores abaixo</string>
+    <string name="textViewNumero1">Número 1:</string>
+    <string name="ex_3_Hint">Ex: 3</string>
+    <string name="textViewNumero2">Número 2:</string>
+    <string name="editTextNumero2">Ex: 2</string>
+    <string name="textViewInformacaoOperacoes">Escolha uma das operações básicas abaixo</string>
+    <string name="textViewResultado">Resultado</string>
+    <string name="buttonSomar">Somar</string>
+    <string name="buttonMultiplicar">Multiplicar</string>
+    <string name="buttonSubtrair">Subtrair</string>
+    <string name="buttonDividir">Dividir</string>
 </resources>
