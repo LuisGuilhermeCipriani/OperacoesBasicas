@@ -59,5 +59,14 @@ public class MainActivity extends AppCompatActivity {
                 resultado.setText(String.valueOf(valor1 * valor2));
             }
         });
+
+        dividir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                float valor1 = Float.parseFloat(numero1.getText().toString());
+                float valor2 = Float.parseFloat(numero2.getText().toString());
+                resultado.setText(String.valueOf(valor1 / valor2));
+            }
+        });
     }
 }
