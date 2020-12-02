@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewInformacaoValores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textViewInformacaoValores"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/textViewNumero1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewNumero1"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewInformacaoValores"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoValores" />
+
+    <EditText
+        android:id="@+id/editTextNumero1"
+        android:layout_width="70dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="@string/ex_3_Hint"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInformacaoValores"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoValores"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textViewNumero2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/textViewNumero2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/textViewNumero1"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNumero1" />
+
+    <EditText
+        android:id="@+id/editTextNumero2"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/editTextNumero2"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumero1"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumero1"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/textViewInformacaoOperacoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="@string/textViewInformacaoOperacoes"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoValores" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/textViewResultado"
+        android:textColor="?android:attr/statusBarColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoOperacoes" />
+
+    <Button
+        android:id="@+id/buttonSomar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonSomar"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewInformacaoOperacoes"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoOperacoes" />
+
+    <Button
+        android:id="@+id/buttonMultiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/buttonMultiplicar"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewInformacaoOperacoes"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInformacaoOperacoes" />
+
+    <Button
+        android:id="@+id/buttonSubtrair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/buttonSubtrair"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/buttonSomar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSomar" />
+
+    <Button
+        android:id="@+id/buttonDividir"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/buttonDividir"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMultiplicar"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMultiplicar" />
+</androidx.constraintlayout.widget.ConstraintLayout>
